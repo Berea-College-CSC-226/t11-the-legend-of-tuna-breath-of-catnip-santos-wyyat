@@ -13,9 +13,9 @@ ___
 ```
     |                 | Monday | Wednesday | Friday |
     |-----------------|--------|-----------|--------|
-    | Driver          |        |           |        |
-    | Navigator       |        |           |        |
-    | Quality Control |        |           |        |
+    | Driver          | Wyatt  |           |        |
+    | Navigator       | Berni  |           |        |
+    | Quality Control | Both   |           |        |
 ```
 
 ___
@@ -35,14 +35,14 @@ ___
     c) method calls to another class
 
 ```
-    self.size = 800, 600                              # **Replace This Text With Your Response**
-    self.running = True                               # **Replace This Text With Your Response**
-    pygame.init()                                     # **Replace This Text With Your Response**
-    self.screen = pygame.display.set_mode(self.size)  # **Replace This Text With Your Response**
-    self.clock = pygame.time.Clock()                  # **Replace This Text With Your Response**
-    self.player = Player(self.size)                   # **Replace This Text With Your Response**
-    self.good_npc = NPC(self.size)                    # **Replace This Text With Your Response**
-    self.screen.fill('#9CBEBA')                       # **Replace This Text With Your Response**
+    self.size = 800, 600                              Instance parameters
+    self.running = True                               Inatance parameters
+    pygame.init()                                     method calls to another class
+    self.screen = pygame.display.set_mode(self.size)  
+    self.clock = pygame.time.Clock()                  
+    self.player = Player(self.size)                   method calls to another class
+    self.good_npc = NPC(self.size)                    method calls to another class
+    self.screen.fill('#9CBEBA')                       
 ```
 
 2.c. Parse through the `run()` method of t11_game.py. In particular, note how the game handles 
