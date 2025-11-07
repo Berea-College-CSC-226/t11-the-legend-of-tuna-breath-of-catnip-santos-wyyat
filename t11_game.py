@@ -15,11 +15,10 @@
 # licensed under a Creative Commons
 # Attribution-Noncommercial-Share Alike 3.0 United States License.
 ####################################################################################
-
 import pygame
+
 from t11_NPC import NPC, Good_NPC, Bad_NPC
 from t11_player import Player
-
 
 class Game:
     def __init__(self):
@@ -35,6 +34,9 @@ class Game:
         self.tuna = Player(self.size)
         self.tacocat = Good_NPC(self.size)
         self.whiskers = Bad_NPC(self.size)
+        self.happy = Bad_NPC(self.size)
+        self.sad = Bad_NPC(self.size)
+        self.god = Bad_NPC(self.size)
 
 
     def run(self):
@@ -65,6 +67,9 @@ class Game:
                 self.tuna.movement(pygame.key.get_pressed())
                 self.tacocat.movement()
                 self.whiskers.movement()
+                self.happy.movement()
+                self.sad.movement()
+                self.god.movement()
                 self.screen.fill('#9CBEBA')
                 self.screen.blit(self.tuna.surf, self.tuna.rect)
                 self.screen.blit(self.tacocat.surf, self.tacocat.rect)
